@@ -77,7 +77,7 @@ const ManufacturingPage: FC = () => {
           image: '/images/case-studies/automotive.jpg',
           clientName: 'Leading Automotive Manufacturer',
           result: '42% reduction in unplanned downtime, 38% improvement in quality metrics',
-          link: '/case-studies/automotive-manufacturing',
+          link: '/contact',
         },
         {
           title: 'Electronics Supply Chain Optimization',
@@ -85,7 +85,7 @@ const ManufacturingPage: FC = () => {
           image: '/images/case-studies/electronics.jpg',
           clientName: 'Global Electronics Manufacturer',
           result: '30% reduction in inventory costs, 25% improvement in on-time delivery',
-          link: '/case-studies/electronics-supply-chain',
+          link: '/contact',
         },
       ]}
       challenges={[

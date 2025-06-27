@@ -10,45 +10,45 @@ const OurJourney = () => {
     {
       year: '2019',
       title: 'Foundation',
-      description: '',
+      description: 'Understanding the need for SAP Services over and above the innovative products created by our partner company, Alphaxine was founded in India in July 2019.',
       image: '/image/foundation.jpg',
       achievements: [
-        '',
-        '',
-        ''
+        'Established strong foundation with vision to transform SAP services landscape',
+        'Identified market gap and positioned for innovative SAP solutions',
+        'Built initial team of passionate technology professionals'
       ]
     },
     {
       year: '2020',
       title: 'Early Growth',
-      description: '',
+      description: 'Started journey being a trusted SAP partner to SME and larger organizations in India.',
       image: '/image/earlty growth.jpg',
       achievements: [
-        '',
-        '',
-        ''
+        'Became certified SAP partner serving diverse business sectors',
+        'Established strong client relationships with SMEs and enterprises',
+        'Developed expertise in SAP implementation and consulting'
       ]
     },
     {
       year: '2022',
       title: 'Digital Acceleration',
-      description: '',
+      description: 'Even during the pandemic, we acquired and retained our customers, and we grew to a customer base of more than 12 across the globe.',
       image: '/image/Digital Acceleration.jpg',
       achievements: [
-        '',
-        '',
-        ''
+        'Expanded global customer base to 12+ clients worldwide',
+        'Maintained 100% client retention during challenging times',
+        'Accelerated digital transformation initiatives for customers'
       ]
     },
     {
       year: '2024',
       title: 'Present Day',
-      description: '',
+      description: '15+ employees with a team of more than 150 associates over the extended ecosystem, and 3 offices in India and one recently set up in United States.',
       image: '/image/Present Day.jpg',
       achievements: [
-        '',
-        '',
-        ''
+        'Grew to 15+ direct employees and 150+ extended ecosystem partners',
+        'Established 4 offices: 3 in India and 1 in United States',
+        'Positioned as leading SAP solutions provider with global reach'
       ]
     },
   ];
@@ -101,14 +101,14 @@ const OurJourney = () => {
                   <div className="mb-6">
                     <div className="p-6 rounded-lg shadow-lg">
                       <h3 className="text-2xl font-bold text-red-600 mb-2">{event.title}</h3>
-                      <div className="h-5 bg-gray-200 rounded w-full mb-4"></div>
+                      <p className="text-gray-700 text-sm leading-relaxed mb-4">{event.description}</p>
                       <div className="grid grid-cols-1 gap-2">
                         {event.achievements.map((achievement, i) => (
                           <div key={i} className="flex items-start">
                             <svg className="w-5 h-5 text-red-600 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
-                            <div className="h-5 bg-gray-200 rounded w-full"></div>
+                            <span className="text-gray-600 text-sm">{achievement}</span>
                           </div>
                         ))}
                       </div>
@@ -143,14 +143,14 @@ const OurJourney = () => {
                       <div className="w-1/2 pr-16 text-right">
                         <div className="p-6 rounded-lg shadow-lg">
                           <h3 className="text-2xl font-bold text-red-600 mb-2">{event.title}</h3>
-                          <div className="h-5 bg-gray-200 rounded w-full mb-4"></div>
+                          <p className="text-gray-700 text-sm leading-relaxed mb-4 text-right">{event.description}</p>
                           <div className="grid grid-cols-1 gap-2 justify-items-end">
                             {event.achievements.map((achievement, i) => (
                               <div key={i} className="flex items-start flex-row-reverse">
                                 <svg className="w-5 h-5 text-red-600 mt-1 ml-2" fill="currentColor" viewBox="0 0 20 20">
                                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                                 </svg>
-                                <div className="h-5 bg-gray-200 rounded w-full"></div>
+                                <span className="text-gray-600 text-sm text-right">{achievement}</span>
                               </div>
                             ))}
                           </div>
@@ -183,16 +183,16 @@ const OurJourney = () => {
                       <div className="w-1/2 pl-16">
                         <div className="p-6 rounded-lg shadow-lg">
                           <h3 className="text-2xl font-bold text-red-600 mb-2">{event.title}</h3>
-                          <div className="h-5 bg-gray-200 rounded w-full mb-4"></div>
+                          <p className="text-gray-700 text-sm leading-relaxed mb-4">{event.description}</p>
                           <div className="grid grid-cols-1 gap-2">
                             {event.achievements.map((achievement, i) => (
                               <div key={i} className="flex items-start">
                                 <svg className="w-5 h-5 text-red-600 mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                              </svg>
-                              <div className="h-5 bg-gray-200 rounded w-full"></div>
-                            </div>
-                          ))}
+                                </svg>
+                                <span className="text-gray-600 text-sm">{achievement}</span>
+                              </div>
+                            ))}
                           </div>
                         </div>
                       </div>
@@ -222,17 +222,7 @@ const OurJourney = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg shadow-lg">
-              <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-black text-red-600">Our Offices</h3>
-              
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">            
             {/* Additional Global Presence Content */}
             <div className="p-6 rounded-lg shadow-lg">
               <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
@@ -241,11 +231,22 @@ const OurJourney = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3 text-black text-red-600">Global Workforce</h3>
-              <div className="space-y-2">
-                <div className="h-5 bg-gray-200 rounded w-full"></div>
-                <div className="h-5 bg-gray-200 rounded w-full"></div>
-                <div className="h-5 bg-gray-200 rounded w-full"></div>
-                <div className="h-5 bg-gray-200 rounded w-3/4"></div>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-700 text-sm">Direct Employees</span>
+                  <span className="text-red-600 font-semibold">15+</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-700 text-sm">Extended Ecosystem</span>
+                  <span className="text-red-600 font-semibold">150+</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-700 text-sm">Global Clients</span>
+                  <span className="text-red-600 font-semibold">12+</span>
+                </div>
+                <div className="text-gray-600 text-xs mt-2">
+                  Certified professionals across multiple time zones
+                </div>
               </div>
             </div>
             
@@ -256,11 +257,22 @@ const OurJourney = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3 text-black text-red-600">Delivery Capabilities</h3>
-              <div className="space-y-2">
-                <div className="h-5 bg-gray-200 rounded w-full"></div>
-                <div className="h-5 bg-gray-200 rounded w-full"></div>
-                <div className="h-5 bg-gray-200 rounded w-full"></div>
-                <div className="h-5 bg-gray-200 rounded w-3/4"></div>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="text-gray-700 text-sm">24/7 Support Coverage</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="text-gray-700 text-sm">Multi-timezone Operations</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                  <span className="text-gray-700 text-sm">Agile Project Management</span>
+                </div>
+                <div className="text-gray-600 text-xs mt-2">
+                  Delivering excellence across continents
+                </div>
               </div>
             </div>
           </div>
@@ -275,44 +287,38 @@ const OurJourney = () => {
             <div className="h-6 bg-gray-200 rounded w-full max-w-3xl mx-auto"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="space-y-4">
-                <div className="h-6 bg-gray-200 rounded w-full"></div>
-                <div className="h-6 bg-gray-200 rounded w-full"></div>
-                <div className="h-6 bg-gray-200 rounded w-full"></div>
-                <div className="h-6 bg-gray-200 rounded w-3/4"></div>
-              </div>
-              
-              <div className="mt-8 space-y-4">
-                <div className="flex items-start">
-                  <svg className="w-6 h-6 text-red-600 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <div className="h-5 bg-gray-200 rounded w-full"></div>
-                </div>
-                <div className="flex items-start">
-                  <svg className="w-6 h-6 text-red-600 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <div className="h-5 bg-gray-200 rounded w-full"></div>
-                </div>
-                <div className="flex items-start">
-                  <svg className="w-6 h-6 text-red-600 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <div className="h-5 bg-gray-200 rounded w-full"></div>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              <p className="text-gray-700 leading-relaxed text-lg">
+                As we look toward the horizon, Alphaxine envisions a future where technology seamlessly integrates with business processes, creating unprecedented value for organizations worldwide.
+              </p>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Our commitment extends beyond traditional SAP services to encompass emerging technologies, artificial intelligence, and cloud-native solutions that will define the next generation of enterprise computing.
+              </p>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                With strategic expansion plans and continuous innovation at our core, we are positioned to become a global leader in digital transformation consulting.
+              </p>
             </div>
             
-            <div className="relative h-80 md:h-96">
-              <Image 
-                src="/image/future-vision.jpg" 
-                alt="Alphaxine Future Vision" 
-                fill
-                className="object-cover rounded-lg shadow-lg"
-              />
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-red-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-700">Expand to 10+ global offices by 2027</span>
+              </div>
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-red-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-700">Pioneer AI-driven SAP optimization solutions</span>
+              </div>
+              <div className="flex items-start">
+                <svg className="w-6 h-6 text-red-600 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-gray-700">Build sustainable technology partnerships across industries</span>
+              </div>
             </div>
           </div>
         </div>

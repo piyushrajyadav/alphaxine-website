@@ -77,7 +77,7 @@ const ITITESPage: FC = () => {
           image: '/images/case-studies/it-service-provider.jpg',
           clientName: 'Global IT Service Provider',
           result: '55% reduction in deployment time, 40% improvement in code quality',
-          link: '/case-studies/global-it-service-provider',
+          link: '/contact',
         },
         {
           title: 'BPO Digital Transformation',
@@ -85,7 +85,7 @@ const ITITESPage: FC = () => {
           image: '/images/case-studies/bpo.jpg',
           clientName: 'Major BPO Company',
           result: '32% reduction in operating costs, 78% improvement in customer satisfaction',
-          link: '/case-studies/bpo-digital-transformation',
+          link: '/contact',
         },
       ]}
       challenges={[

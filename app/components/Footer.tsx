@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-6 transform transition-transform hover:scale-105">
+            <Link href="/" className="inline-block mb-4 transform transition-transform hover:scale-105">
               <Image 
                 src="/images/logo-white.svg" 
                 alt="alphaxine Logo" 
@@ -43,15 +43,26 @@ const Footer = () => {
                 className="h-8 w-auto"
               />
             </Link>
+            <p className="text-red-400 text-lg font-medium mb-2 italic">
+              We Care for People
+            </p>
+            <p className="text-gray-400 text-sm mb-6 italic">
+              Transforming Business Through Intelligent Solutions
+            </p>
            
             <div className="mb-8">
               <h3 className="text-xl font-bold mb-6 relative pb-3">
                 Contact Us
                 <span className="absolute bottom-0 left-0 w-12 h-1 bg-red-600"></span>
               </h3>
-              <p className="text-gray-400 mb-2">23b imagine tech park, Salt lake sector 5, Kolkata, West Bengal</p>
-              <p className="text-gray-400 mb-2">📞 +91 80 1234 5678</p>
-              <p className="text-gray-400">✉️ contact@alphaxine.com</p>
+              <div className="space-y-3 text-gray-400">
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Corporate Address</h4>
+                  <p className="text-sm leading-relaxed">Unit 3A & 3B, 23rd Floor, Imagine Tech Park, Block DP, Plot 6, Salt Lake, DP Block, Sector V, Saltlake, Kolkata, West Bengal 700091</p>
+                </div>
+                <p className="flex items-center text-sm"><span className="mr-2">📞</span> +91 33 40670040</p>
+                <p className="flex items-center text-sm"><span className="mr-2">✉️</span> info@alphaxine.com</p>
+              </div>
             </div>
 
             <div className="flex space-x-4">
@@ -349,7 +360,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} alphaxine. All rights reserved.
+              &copy; Alphaxine. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">

@@ -77,7 +77,7 @@ const RetailLogisticsPage: FC = () => {
           image: '/images/case-studies/retail.jpg',
           clientName: 'Global Retail Chain',
           result: '45% increase in online sales, 38% improvement in customer retention',
-          link: '/case-studies/global-retailer',
+          link: '/contact',
         },
         {
           title: 'Logistics Company Supply Chain Optimization',
@@ -85,7 +85,7 @@ const RetailLogisticsPage: FC = () => {
           image: '/images/case-studies/logistics.jpg',
           clientName: 'Major Logistics Provider',
           result: '32% reduction in delivery costs, 28% improvement in on-time delivery',
-          link: '/case-studies/logistics-optimization',
+          link: '/contact',
         },
       ]}
       challenges={[

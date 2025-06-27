@@ -22,7 +22,7 @@ const CorporatePresentation = () => {
             
             <div className="flex justify-center">
               <Link
-                href="/Alphaxine - Company Profile (April 2025) (1).pptx"
+                href="/Alphaxine - Company Profile (April 2026) (1).pptx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"

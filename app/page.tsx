@@ -18,7 +18,7 @@ export default function Home() {
       {/* <MASpeaks /> */}
       <Partners />
       <DownloadSection />
-      <Insights />
+      {/* <Insights /> */}
       <ContactCTA />
     </main>
   );

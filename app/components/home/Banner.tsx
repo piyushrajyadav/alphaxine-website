@@ -10,27 +10,27 @@ const Banner = () => {
   const slides = [
     {
       image: '/image/banner1.webp',
-      title: '',
-      subtitle: '',
-      description: '',
+      title: 'Transform Your Business',
+      subtitle: 'Digital Innovation Partner',
+      description: 'Welcome to Alphaxine, your trusted partner for digital transformation. We unlock growth and innovation through technology.',
       ctaText: 'Connect with us',
       ctaLink: '/contact',
     },
     {
       image: '/image/banner2.webp',
-      title: '',
-      subtitle: '',
-      description: '',
+      title: 'Enterprise Solutions',
+      subtitle: 'Tailored for Success',
+      description: 'Discover our consulting expertise and proven approach. Leading businesses choose us for results that drive real value.',
       ctaText: 'Explore our services',
       ctaLink: '/services',
     },
     {
       image: '/image/banner3.webp',
-      title: '',
-      subtitle: '',
-      description: '',
+      title: 'Industry Expertise',
+      subtitle: 'Proven Results',
+      description: 'Deep industry knowledge meets cutting-edge technology. We deliver solutions that create measurable business outcomes.',
       ctaText: 'Discover our solutions',
-      ctaLink: '/solutions',
+      ctaLink: '/industries',
     },
   ];
 
@@ -66,13 +66,13 @@ const Banner = () => {
             <div className="container mx-auto px-4 md:px-8 lg:px-16">
               <div className="max-w-2xl text-white">
                 <h2 className="text-5xl font-bold mb-2 slide-in-left text-red-600 h-12">
-                  {slide.title || <span className="bg-gray-200/20 animate-pulse rounded h-full block w-3/4"></span>}
+                  {slide.title}
                 </h2>
                 <h3 className="text-2xl font-normal mb-6 slide-in-left text-red-600 h-8" style={{ animationDelay: '0.2s' }}>
-                  {slide.subtitle || <span className="bg-gray-200/20 animate-pulse rounded h-full block w-2/3"></span>}
+                  {slide.subtitle}
                 </h3>
                 <p className="text-xl mb-8 slide-in-left h-16" style={{ animationDelay: '0.4s' }}>
-                  {slide.description || <span className="bg-gray-200/20 animate-pulse rounded h-full block w-full"></span>}
+                  {slide.description}
                 </p>
                 <div className="slide-in-left relative z-50" style={{ animationDelay: '0.6s' }}>
                   <Link

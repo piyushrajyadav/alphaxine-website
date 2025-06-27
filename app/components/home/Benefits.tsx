@@ -56,10 +56,11 @@ const Benefits = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Customized For You and Your Digital Journey
+            Tailored Solutions for Your Digital Journey
           </h2>
-          <div className="h-6 bg-gray-200 rounded max-w-3xl mx-auto mb-2"></div>
-          <div className="h-6 bg-gray-200 rounded max-w-2xl mx-auto"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Every business has unique challenges. We craft personalized strategies that align with your goals and drive measurable results.
+          </p>
         </div>
 
         {/* Mobile View Benefits List with Accordion Style */}
@@ -192,11 +193,21 @@ const Benefits = () => {
               {/* Expanded Benefit Content for Mobile */}
               {expandedMobileBenefit === benefit.id && (
                 <div className="bg-white p-5 border-t border-gray-200">
-                  <div className="h-12 bg-gray-200 rounded w-full mb-4"></div>
+                  <p className="text-gray-700 mb-4">
+                    {benefit.id === 'product-approach' && 'Transform your business model with product-centric thinking that drives innovation and customer value.'}
+                    {benefit.id === 'cloud-migration' && 'Move to the cloud seamlessly with our proven migration strategies and comprehensive support.'}
+                    {benefit.id === 'data-ai' && 'Unlock the potential of your data with AI-powered analytics and machine learning solutions.'}
+                    {benefit.id === 'infrastructure' && 'Build robust, scalable infrastructure that grows with your business needs.'}
+                    {benefit.id === 'process-optimization' && 'Streamline operations and eliminate bottlenecks with intelligent process automation.'}
+                  </p>
                   <div className="mb-4">
                     <h4 className="text-base font-semibold mb-3 text-gray-800">Key Benefits:</h4>
                     <div className="grid grid-cols-1 gap-2">
-                      {[1, 2, 3].map((_, index) => (
+                      {benefit.id === 'product-approach' && [
+                        'Faster time-to-market',
+                        'Enhanced customer satisfaction',
+                        'Improved competitive advantage'
+                      ].map((text, index) => (
                         <div key={index} className="flex items-start">
                           <svg
                             className="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0"
@@ -209,14 +220,100 @@ const Benefits = () => {
                               clipRule="evenodd"
                             />
                           </svg>
-                          <div className="h-5 bg-gray-200 rounded w-full"></div>
+                          <span className="text-gray-700">{text}</span>
+                        </div>
+                      ))}
+                      {benefit.id === 'cloud-migration' && [
+                        'Reduced infrastructure costs',
+                        'Enhanced scalability',
+                        'Improved security and compliance'
+                      ].map((text, index) => (
+                        <div key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
+                        </div>
+                      ))}
+                      {benefit.id === 'data-ai' && [
+                        'Data-driven decision making',
+                        'Predictive analytics capabilities',
+                        'Automated insights generation'
+                      ].map((text, index) => (
+                        <div key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
+                        </div>
+                      ))}
+                      {benefit.id === 'infrastructure' && [
+                        'High availability systems',
+                        'Automated monitoring',
+                        'Disaster recovery planning'
+                      ].map((text, index) => (
+                        <div key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
+                        </div>
+                      ))}
+                      {benefit.id === 'process-optimization' && [
+                        'Increased operational efficiency',
+                        'Reduced manual errors',
+                        'Faster processing times'
+                      ].map((text, index) => (
+                        <div key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-0.5 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
                         </div>
                       ))}
                     </div>
                   </div>
                   <div className="flex justify-center mb-4">
                     <div className="text-center bg-gray-50 px-6 py-3 rounded-lg">
-                      <div className="h-6 bg-gray-200 rounded w-12 mx-auto mb-1"></div>
+                      <div className="text-2xl font-bold text-red-600 mb-1">
+                        {benefit.id === 'product-approach' ? '40%' :
+                         benefit.id === 'cloud-migration' ? '30%' :
+                         benefit.id === 'data-ai' ? '50%' :
+                         benefit.id === 'infrastructure' ? '99.9%' :
+                         '60%'}
+                      </div>
                       <div className="text-xs text-gray-600">
                         {benefit.id === 'product-approach' ? 'Increased ROI' :
                          benefit.id === 'cloud-migration' ? 'Cost Reduction' :
@@ -402,7 +499,11 @@ const Benefits = () => {
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="text-base md:text-lg font-semibold text-gray-800 mb-2">Key Benefits</h4>
                     <ul className="space-y-2">
-                      {[1, 2, 3].map((_, index) => (
+                      {benefit.id === 'product-approach' && [
+                        'Faster time-to-market',
+                        'Enhanced customer satisfaction',
+                        'Improved competitive advantage'
+                      ].map((text, index) => (
                         <li key={index} className="flex items-start">
                           <svg
                             className="w-5 h-5 text-red-600 mt-1 mr-2 flex-shrink-0"
@@ -415,14 +516,100 @@ const Benefits = () => {
                               clipRule="evenodd"
                             />
                           </svg>
-                          <div className="h-5 bg-gray-200 rounded w-full"></div>
+                          <span className="text-gray-700">{text}</span>
+                        </li>
+                      ))}
+                      {benefit.id === 'cloud-migration' && [
+                        'Reduced infrastructure costs',
+                        'Enhanced scalability',
+                        'Improved security and compliance'
+                      ].map((text, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-1 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
+                        </li>
+                      ))}
+                      {benefit.id === 'data-ai' && [
+                        'Data-driven decision making',
+                        'Predictive analytics capabilities',
+                        'Automated insights generation'
+                      ].map((text, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-1 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
+                        </li>
+                      ))}
+                      {benefit.id === 'infrastructure' && [
+                        'High availability systems',
+                        'Automated monitoring',
+                        'Disaster recovery planning'
+                      ].map((text, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-1 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
+                        </li>
+                      ))}
+                      {benefit.id === 'process-optimization' && [
+                        'Increased operational efficiency',
+                        'Reduced manual errors',
+                        'Faster processing times'
+                      ].map((text, index) => (
+                        <li key={index} className="flex items-start">
+                          <svg
+                            className="w-5 h-5 text-red-600 mt-1 mr-2 flex-shrink-0"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+                          <span className="text-gray-700">{text}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg flex items-center justify-center">
                     <div className="text-center">
-                      <div className="h-8 bg-gray-200 rounded w-16 mx-auto mb-2"></div>
+                      <div className="text-3xl font-bold text-red-600 mb-2">
+                        {benefit.id === 'product-approach' ? '40%' :
+                         benefit.id === 'cloud-migration' ? '30%' :
+                         benefit.id === 'data-ai' ? '50%' :
+                         benefit.id === 'infrastructure' ? '99.9%' :
+                         '60%'}
+                      </div>
                       <div className="text-xs md:text-sm text-gray-600">
                         {benefit.id === 'product-approach' ? 'Increased ROI' :
                          benefit.id === 'cloud-migration' ? 'Cost Reduction' :
@@ -433,6 +620,14 @@ const Benefits = () => {
                     </div>
                   </div>
                 </div>
+                
+                <p className="text-gray-700 leading-relaxed">
+                  {benefit.id === 'product-approach' && 'Transform your business model with product-centric thinking that drives innovation and customer value. Our approach helps you build solutions that truly resonate with your target market.'}
+                  {benefit.id === 'cloud-migration' && 'Move to the cloud seamlessly with our proven migration strategies and comprehensive support. We ensure minimal downtime and maximum performance throughout the transition.'}
+                  {benefit.id === 'data-ai' && 'Unlock the potential of your data with AI-powered analytics and machine learning solutions. Turn information into intelligence that drives strategic decision-making.'}
+                  {benefit.id === 'infrastructure' && 'Build robust, scalable infrastructure that grows with your business needs. Our solutions ensure reliability, security, and optimal performance at every scale.'}
+                  {benefit.id === 'process-optimization' && 'Streamline operations and eliminate bottlenecks with intelligent process automation. Reduce costs while improving quality and speed of delivery.'}
+                </p>
               </motion.div>
             ))}
           </div>

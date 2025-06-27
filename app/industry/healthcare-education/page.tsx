@@ -77,7 +77,7 @@ const HealthcareEducationPage: FC = () => {
           image: '/images/case-studies/healthcare-network.jpg',
           clientName: 'Regional Healthcare Network',
           result: '32% reduction in administrative costs, 45% improvement in patient satisfaction',
-          link: '/case-studies/regional-healthcare-network',
+          link: '/contact',
         },
         {
           title: 'University Digital Learning Transformation',
@@ -85,7 +85,7 @@ const HealthcareEducationPage: FC = () => {
           image: '/images/case-studies/university.jpg',
           clientName: 'Major University',
           result: '60% increase in student engagement, 25% improvement in course completion rates',
-          link: '/case-studies/university-digital-transformation',
+          link: '/contact',
         },
       ]}
       challenges={[

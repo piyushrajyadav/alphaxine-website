@@ -15,9 +15,11 @@ const ContactCTA = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Every Great Partnership Starts with a Conversation
+              Ready to Transform Your Business?
             </h2>
-            <div className="h-16 bg-white/20 rounded-lg mb-8 mx-auto max-w-3xl"></div>
+            <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto">
+              Let's discuss how we can help you achieve your digital transformation goals and drive meaningful results.
+            </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -42,6 +44,12 @@ const ContactCTA = () => {
                 className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white/10 transition-colors duration-200 text-lg"
               >
                 Explore Our Services
+              </Link>
+              <Link
+                href="/industries"
+                className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg font-medium hover:bg-white/10 transition-colors duration-200 text-lg"
+              >
+                Explore Our Solutions
               </Link>
             </div>
           </motion.div>

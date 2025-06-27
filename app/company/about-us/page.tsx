@@ -16,7 +16,9 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 text-red-600">About Alphaxine</h1>
-                <div className="h-16 bg-gray-200 rounded mb-8"></div>
+                <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                  Alphaxine Solutions Private Limited, founded in 2019 in Kolkata, began as an IT services firm specializing in SAP services for global clients. Over the years, we have evolved into a comprehensive technology solutions provider with a clear vision: to be one of the most preferred digital partners driving business through IT, while building a vibrant organization that changes lives every day – one solution at a time.
+                </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/contact" className="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 inline-flex items-center justify-center">
                     Connect With Us
@@ -47,27 +49,34 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-bold mb-6 text-red-600">Who We Are</h2>
-                <div className="h-6 bg-gray-200 rounded w-full mb-4"></div>
-                <div className="h-6 bg-gray-200 rounded w-full mb-4"></div>
-                <div className="h-6 bg-gray-200 rounded w-full mb-4"></div>
-                <div className="h-6 bg-gray-200 rounded w-full mb-6"></div>
+                <div className="space-y-4 mb-8">
+                  <p className="text-gray-700 leading-relaxed">
+                    Alphaxine Solutions has expanded its expertise to include SAP ECC, BTP, S4 HANA, and various extensions. As an SAP Global PartnerEdge partner, we maintain industry-leading certifications and partnerships that validate our commitment to excellence.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Recently, we earned the "StartUpIndia" certification from the Government of India for our IT consulting services. With locations in Kolkata and our new expansion to Delaware, US, we have steadily grown our global footprint.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Our strategic focus on IT consulting and services has led to the formation of the Alphaxine Group, which aims to meet the evolving needs of clients through leadership, advisory, and core teams. We are driven by our commitment to provide creative, professional, and customized business solutions that enable customers to become wealthier while helping them face daily organizational challenges.
+                  </p>
+                </div>
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 rounded-lg">
-                    <div className="text-black font-bold text-3xl mb-2">15+</div>
-                    <div className="text-black">Years of Excellence</div>
+                    <div className="text-black font-bold text-3xl mb-2">2019</div>
+                    <div className="text-black">Founded</div>
                   </div>
                   <div className="p-4 rounded-lg">
-                    <div className="text-black font-bold text-3xl mb-2">500+</div>
-                    <div className="text-black">Projects Delivered</div>
+                    <div className="text-black font-bold text-3xl mb-2">12+</div>
+                    <div className="text-black">Global Clients</div>
                   </div>
                   <div className="p-4 rounded-lg">
-                    <div className="text-black font-bold text-3xl mb-2">100+</div>
-                    <div className="text-black">Expert Consultants</div>
+                    <div className="text-black font-bold text-3xl mb-2">150+</div>
+                    <div className="text-black">Team Members</div>
                   </div>
                   <div className="p-4 rounded-lg">
-                    <div className="text-black font-bold text-3xl mb-2">98%</div>
-                    <div className="text-black">Client Satisfaction</div>
+                    <div className="text-black font-bold text-3xl mb-2">4</div>
+                    <div className="text-black">Global Offices</div>
                   </div>
                 </div>
               </div>
@@ -88,7 +97,9 @@ const AboutUs = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4 text-red-600">Our Core Values</h2>
-              <div className="h-6 bg-gray-200 rounded max-w-3xl mx-auto"></div>
+              <p className="text-gray-700 max-w-3xl mx-auto">
+                Our values reflect our commitment to delivering innovative solutions that transform industries and improve lives through technology, while building lasting partnerships with our clients.
+              </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -99,7 +110,9 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-center text-red-600">Innovation</h3>
-                <div className="h-16 bg-gray-200 rounded"></div>
+                <p className="text-gray-600 text-sm text-center">
+                  We recognize the importance of innovation to navigate the complex business and technological landscape, providing high returns on efficiency and cost-effectiveness.
+                </p>
               </div>
               
               <div className="p-6 rounded-lg shadow-lg">
@@ -110,7 +123,9 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-center text-red-600">Integrity</h3>
-                <div className="h-16 bg-gray-200 rounded"></div>
+                <p className="text-gray-600 text-sm text-center">
+                  Our ISO certifications and commitment to quality standards reflect our dedication to maintaining the highest levels of integrity in all our operations.
+                </p>
               </div>
               
               <div className="p-6 rounded-lg shadow-lg">
@@ -120,7 +135,9 @@ const AboutUs = () => {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-center text-red-600">Collaboration</h3>
-                <div className="h-16 bg-gray-200 rounded"></div>
+                <p className="text-gray-600 text-sm text-center">
+                  We work closely with clients, partners like IIMs across India, and our extended ecosystem to deliver comprehensive solutions that meet evolving needs.
+                </p>
               </div>
               
               <div className="p-6 rounded-lg shadow-lg">
@@ -129,8 +146,10 @@ const AboutUs = () => {
                     <path fillRule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-center text-red-600">Excellence</h3>
-                <div className="h-16 bg-gray-200 rounded"></div>
+                <h3 className="text-xl font-bold mb-3 text-center text-red-600">Social Impact</h3>
+                <p className="text-gray-600 text-sm text-center">
+                  We focus on Healthcare and higher education in developing countries to create social value through digital transformation and improve lives globally.
+                </p>
               </div>
             </div>
           </div>
@@ -150,8 +169,10 @@ const AboutUs = () => {
                 />
               </div>
               <div className="">
-                <h2 className="text-3xl font-bold mb-6 text-red-600">Our Approach</h2>
-                <div className="h-6 bg-gray-200 rounded w-full mb-6"></div>
+                <h2 className="text-3xl font-bold mb-6 text-red-600">Our Services & Capabilities</h2>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Alphaxine's comprehensive services span across IT and AI strategy consulting, outsourcing assessments, transformation, automation, and specialized technology solutions designed to drive digital transformation across industries.
+                </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -159,8 +180,8 @@ const AboutUs = () => {
                       <span className="text-black font-bold">1</span>
                     </div>
                     <div className="">
-                      <h3 className="text-xl font-bold mb-2 text-red-600">Understand</h3>
-                      <div className="h-6 bg-gray-200 rounded w-full"></div>
+                      <h3 className="text-xl font-bold mb-2 text-red-600">Enterprise Applications</h3>
+                      <p className="text-gray-600 text-sm">SAP ECC, BTP, S4 HANA, Microsoft, and Odoo implementation and consulting services.</p>
                     </div>
                   </div>
                   
@@ -169,8 +190,8 @@ const AboutUs = () => {
                       <span className="text-black font-bold">2</span>
                     </div>
                     <div className="">
-                      <h3 className="text-xl font-bold mb-2 text-red-600">Innovate</h3>
-                      <div className="h-6 bg-gray-200 rounded w-full"></div>
+                      <h3 className="text-xl font-bold mb-2 text-red-600">Data & Analytics</h3>
+                      <p className="text-gray-600 text-sm">Microsoft Azure, Power BI, and Snowflake solutions for data-driven insights.</p>
                     </div>
                   </div>
                   
@@ -179,8 +200,8 @@ const AboutUs = () => {
                       <span className="text-black font-bold">3</span>
                     </div>
                     <div className="">
-                      <h3 className="text-xl font-bold mb-2 text-red-600">Implement</h3>
-                      <div className="h-6 bg-gray-200 rounded w-full"></div>
+                      <h3 className="text-xl font-bold mb-2 text-red-600">Higher Education</h3>
+                      <p className="text-gray-600 text-sm">Partnerships with IIMs across India for executive education and classroom services.</p>
                     </div>
                   </div>
                   
@@ -189,8 +210,8 @@ const AboutUs = () => {
                       <span className="text-black font-bold">4</span>
                     </div>
                     <div className="">
-                      <h3 className="text-xl font-bold mb-2 text-red-600">Optimize</h3>
-                      <div className="h-6 bg-gray-200 rounded w-full"></div>
+                      <h3 className="text-xl font-bold mb-2 text-red-600">Healthcare Solutions</h3>
+                      <p className="text-gray-600 text-sm">Specialized focus on healthcare providers and digital transformation in developing countries.</p>
                     </div>
                   </div>
                 </div>
@@ -203,7 +224,9 @@ const AboutUs = () => {
         <section className="py-16 text-black border-t border-gray-200">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6 text-red-600">Ready to Transform Your Business?</h2>
-            <div className="h-6 bg-gray-200 rounded max-w-3xl mx-auto mb-8"></div>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+              Partner with us to unlock your organization's potential. Let's work together to create innovative solutions that drive growth, enable success, and transform your business through cutting-edge technology.
+            </p>
             <Link href="/contact" className="bg-red-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-red-700 inline-flex items-center">
               Get in Touch
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
